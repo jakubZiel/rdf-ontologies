@@ -1,0 +1,131 @@
+@prefix auto: <http://localhost/ontologies/2019/1/10/automobile#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://localhost/ontologies/2019/1/10/automobile> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://localhost/ontologies/2019/1/10/automobile#hasEngine
+auto:hasEngine rdf:type owl:ObjectProperty ;
+           rdfs:domain auto:Automobile ;
+           rdfs:range auto:Engine .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://localhost/ontologies/2019/1/10/automobile#Atlas
+auto:Atlas rdf:type owl:Class ;
+       rdfs:subClassOf auto:SUV ;
+       rdfs:label "Atlas" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Automobile
+auto:Automobile rdf:type owl:Class ;
+            rdfs:label "Automobile" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Beetle
+auto:Beetle rdf:type owl:Class ;
+        rdfs:subClassOf auto:Compact ;
+        rdfs:label "Beetle" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Beetle_Convertible
+auto:Beetle_Convertible rdf:type owl:Class ;
+                    rdfs:subClassOf auto:Convertible ;
+                    rdfs:label "Beetle Convertible" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Compact
+auto:Compact rdf:type owl:Class ;
+         rdfs:subClassOf auto:Volkswagen ;
+         rdfs:label "Compact" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Components
+auto:Components rdf:type owl:Class ;
+            rdfs:label "Component" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Convertible
+auto:Convertible rdf:type owl:Class ;
+             rdfs:subClassOf auto:Volkswagen .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Electric
+auto:Electric rdf:type owl:Class ;
+          rdfs:subClassOf auto:Engine ;
+          rdfs:label "Electric" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Engine
+auto:Engine rdf:type owl:Class ;
+        rdfs:subClassOf auto:Components ;
+        rdfs:label "Engine" .
+
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Golf_Alltrack
+auto:Golf_Alltrack rdf:type owl:Class ;
+               rdfs:subClassOf auto:Wagon ;
+               rdfs:label "Golf Alltrack" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Golf_R
+auto:Golf_R rdf:type owl:Class ;
+        rdfs:subClassOf auto:Compact ;
+        rdfs:label "Golf R" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Golf_Sportwagen
+auto:Golf_Sportwagen rdf:type owl:Class ;
+                 rdfs:subClassOf auto:Wagon ;
+                 rdfs:label "Golf Sportwagen" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Jetta
+auto:Jetta rdf:type owl:Class ;
+       rdfs:subClassOf auto:Sedan ;
+       rdfs:label "Jetta" .
+
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Passat
+auto:Passat rdf:type owl:Class ;
+        rdfs:subClassOf auto:Sedan ;
+        rdfs:label "Passat" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#SUV
+auto:SUV rdf:type owl:Class ;
+     rdfs:subClassOf auto:Volkswagen .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Sedan
+auto:Sedan rdf:type owl:Class ;
+       rdfs:subClassOf auto:Volkswagen .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Tiguan
+auto:Tiguan rdf:type owl:Class ;
+        rdfs:subClassOf auto:SUV ;
+        rdfs:label "Tiguan" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Volkswagen
+auto:Volkswagen rdf:type owl:Class ;
+            rdfs:subClassOf auto:Automobile ;
+            rdfs:label "Volkswagen" .
+
+
+###  http://localhost/ontologies/2019/1/10/automobile#Wagon
+auto:Wagon rdf:type owl:Class ;
+       rdfs:subClassOf auto:Volkswagen .
