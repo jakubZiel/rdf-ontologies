@@ -4,6 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix un: <https://www.user_neo4j.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 auto:hasEngine a owl:ObjectProperty, <https://www.user_neo4j.com#@34@35@>;
   rdfs:domain auto:Automobile;
