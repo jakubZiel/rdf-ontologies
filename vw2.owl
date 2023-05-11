@@ -11,6 +11,7 @@
 
 ###  http://localhost/ontologies/2019/1/10/automobile#hasEngine
 auto:hasEngine rdf:type owl:ObjectProperty ;
+           rdfs:age 10;
            rdfs:domain auto:Automobile ;
            rdfs:range auto:Engine .
 
